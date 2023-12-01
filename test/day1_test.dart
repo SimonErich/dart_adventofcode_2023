@@ -6,12 +6,12 @@ void main() {
     final mockDataList = '1abc2\n pqr3stu8vwx\n a1b2c3d4e5f\n treb7uchet';
 
     final solution1Sum =
-        getSumOfFirstAndLastNumericValuesOfLinesInString(mockDataList);
+        removeNonNumericChars(mockDataList);
 
     expect(solution1Sum, 142);
   });
 
-  test('replaceWrittenNumbersWithNumericOnes replaces numbers correctly',
+  test('numberStringsToNumbers replaces numbers correctly',
       () async {
     final mockDataList =
         'two1nine\neightwothree\nabcone2threexyz\nxtwone3four\n4nineeightseven2\nzoneight234\n7pqrstsixteen';
@@ -19,7 +19,7 @@ void main() {
         't2wo1ni9ne\nei8ght2woth3ree\nabcon1e2th3reexyz\nxt2won1e3fo4ur\n4ni9neei8ghtsev7en2\nzon1ei8ght234\n7pqrstsi6xteen';
 
     final numericReplacedWords =
-        replaceWrittenNumbersWithNumericOnes(mockDataList);
+        numberStringsToNumbers(mockDataList);
 
     expect(numericReplacedWords, mockDataListExpected);
   });
@@ -29,9 +29,9 @@ void main() {
         'two1nine\neightwothree\nabcone2threexyz\nxtwone3four\n4nineeightseven2\nzoneight234\n7pqrstsixteen';
 
     final numericReplacedWords =
-        replaceWrittenNumbersWithNumericOnes(mockDataList);
+        numberStringsToNumbers(mockDataList);
     final solution2Sum =
-        getSumOfFirstAndLastNumericValuesOfLinesInString(numericReplacedWords);
+        removeNonNumericChars(numericReplacedWords);
 
     expect(solution2Sum, 281);
   });
