@@ -37,7 +37,7 @@ String getFirstLastNumberSum(line) {
   // get first and last characters
   final first = numericLine[0];
   final last =
-      (numericLine.length > 1) ? numericLine[numericLine.length - 1] : '';
+      (numericLine.length > 0) ? numericLine[numericLine.length - 1] : '';
 
   return first + last;
 }
