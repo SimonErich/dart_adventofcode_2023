@@ -1,6 +1,6 @@
 # 🎅🎄 AdventOfCode boilerplate 🎄🎅
 
-Based on [dart_adventofcode Boilerplate](https://github.com/SimonErich/dart_adventofcode)
+Based on [dart_adventofcode Boilerplate](https://github.com/SimonErich/dart_adventofcode).<br />
 This `dart` boilerplate can be used to quickly get started with the [adventofcode.com](https://adventofcode.com) challenge.
 
 ## Getting started
